@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baseball01</title>
+        <link rel="stylesheet" href="images/baseballclose.css">
+    </head>
+    <body>
+{% block content %}
+
+<h1>Fantasy Pitcher Quick Info</h1>
+
+<img src="http://assets.nydailynews.com/polopoly_fs/1.2174820.1428326301!/img/httpImage/image.jpg_gen/derivatives/article_750/nl-baseball.jpg" width="400" height="300" />
+
+<p><h2> 2017</h2></p>
+
+<h4><a href=http://www.brooksbaseball.net/pfxVB/pfx.php>PITCHf/x-Brooks Baseball</a></h4>
+
+<p>  Used to view a particular pitcher's performance in a particular game.  Select the date, then the game, then the pitcher.  Very useful for judging recent results against prior results and gauging the reason for any changes.  For example, has this pitcher's velocity gone up or down?  Which pitch is most effective, and how often is he throwing it?</p>
+
+<h4><a href=http://www.baseballprospectus.com/sortable/index.php?cid=2022356>CFIP-Baseball Prospectus</a></h4>
+
+<p>  Predictive, rather than descriptive, global pitching statistic</p>
+
+<h4>  <a href=http://www.fangraphs.com/leaders.aspx?pos=all&stats=pit&lg=all&qual=0&type=1&season=2017&month=0&season1=2017&ind=0&team=0&rost=0&age=0&filter=&players=p2017-05-08&sort=19,d>ERA minus FIP</a></h4>
+
+<p>  ERA minus FIP is the expected regression a pitcher is likely to undergo.  A larger number generally forecasts greater positive regression, and a negative number indicates negative expected regression.</p>
+
+<!-- <p><h2>Top 10 SP stat table</h2></p>
+<table class="table" border="3" cellpadding="7" cellspacing="7">
+    <tr>
+        <th><a href="http://localhost:5000/name">Name</a></th>
+        <th><a href="http://localhost:5000/fp_rank">FP Rank</a></th>
+        <th><a href="http://localhost:5000/sw_rank">SW Rank</a></th>
+        <th>CT Rank</th>
+        <th><a href="http://localhost:5000/hc_rank">HC Rank</a></th>
+        <th><a href="http://localhost:5000/xfip">CFIP</a></th>
+        <th><a href="http://localhost:5000/xfip">xFIP</a></th>
+        <th><a href="http://localhost:5000/fip">FIP</a></th>
+        <th><a href="http://localhost:5000/kperbb">KperBB</a></th>
+        <th><a href="http://localhost:5000/total_ks">Total Ks</a></th>
+        <th><a href="http://localhost:5000/whip">WHIP</a></th>
+        <th><a href="http://localhost:5000/era">ERA</a></th>
+        <th><a href="http://localhost:5000/ip">IP</a></th>
+        <th><a href="http://localhost:5000/wins">Wins</a></th>
+        <th><a href="http://localhost:5000/qs_rate">QS%</a></th>
+        <th><a href="http://localhost:5000/gb_rate">GB%</a></th>
+        <th><a href="http://localhost:5000/sc_rate">SC%</a></th>
+    </tr>
+   {% for row in ct_rank_page %}
+    <tr>
+        <td>{{ row.Name }}</td>
+        <td>{{ row.FP_Rank }}</td>
+        <td>{{ row.SW_Rank }}</td>
+        <td>{{ row.CT_Rank }}</td>
+        <td>{{ row.HC_Rank }}</td>
+        <td>{{ row.CFIP }}</td>
+        <td>{{ row.xFIP }}</td>
+        <td>{{ row.FIP }}</td>
+        <td>{{ row.KperBB }}</td>
+        <td>{{ row.Total_Ks }}</td>
+        <td>{{ row.WHIP }}</td>
+        <td>{{ row.ERA }}</td>
+        <td>{{ row.Innings_Pitched }}</td>
+        <td>{{ row.Wins }}</td>
+        <td>{{ row.Quality_Start_Rate }}</td>
+        <td>{{ row.Ground_Ball_Rate }}</td>
+        <td>{{ row.Soft_Contact_Rate }}</td>
+    </tr>
+{% endfor %}
+</table> -->
+{% endblock %}
+</body>
+</html>
